@@ -10,7 +10,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background: #1B1B20;
+    background: ${({ theme }) => theme.black};
   }
 
   a {
