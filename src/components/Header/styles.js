@@ -27,16 +27,18 @@ export const StyledHeader = styled.header`
       padding-top: 71px;
       background: rgba(11,12,13,0.92);
       list-style: none;
-      & li a {
+      & li {
         margin-bottom: 58px;
-        font-family: Open Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 15px;
-        letter-spacing: 4px;
-        color: ${({ theme }) => theme.white};
-        cursor: pointer;
+        & a {
+          font-family: Open Sans, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 15px;
+          letter-spacing: 4px;
+          color: ${({ theme }) => theme.white};
+          cursor: pointer;
+        }
       }
     }
   }
@@ -80,7 +82,7 @@ export const Logo = styled.h1`
   text-align: center;
   letter-spacing: 0.27em;
 
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;

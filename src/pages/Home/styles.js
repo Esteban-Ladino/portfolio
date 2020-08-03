@@ -14,7 +14,7 @@ export const Text = styled.h1`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 200;
   font-size: 46px;
