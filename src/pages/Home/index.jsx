@@ -8,19 +8,22 @@ export const Home = () => {
 
   useEffect(() => {
     let delta
-
     // Field of view
     const fov = 75
     // Aspect ratio
-    const aspect = window.innerWidth / window.innerHeight
+    let width = document.documentElement.clientWidth
+    let height = document.documentElement.clientHeight
+    width = width < 320 ? 320 : width
+    height = height < 400 ? 400 : height
+    const aspect = width / height
     const near = 1
     const far = 10000
-    const particlesNumber = 130
+    const particlesNumber = width < 589 ? 80 : 135
     const clock = new THREE.Clock()
 
     // Renderer
     const renderer = new THREE.WebGLRenderer({ alpha: true })
-    renderer.setSize(window.innerWidth, window.innerHeight)
+    renderer.setSize(width, height)
     renderer.setClearColor(0x000000, 0)
 
     // Create scene
@@ -36,7 +39,7 @@ export const Home = () => {
 
     // Load texture
     const smokeTexture = new THREE.TextureLoader().load(smoke)
-    const smokeMaterial = new THREE.MeshLambertMaterial({ color: 0x00dddd, opacity: 0.4, map: smokeTexture, transparent: true })
+    const smokeMaterial = new THREE.MeshLambertMaterial({ color: 0x00dddd, opacity: 0.45, map: smokeTexture, transparent: true })
     const smokeGeo = new THREE.PlaneGeometry(300, 300)
     const smokeParticles = []
 
@@ -51,12 +54,25 @@ export const Home = () => {
 
     mount.current.appendChild(renderer.domElement)
 
+    const handleResize = () => {
+      let width = document.documentElement.clientWidth
+      let height = document.documentElement.clientHeight
+      width = width < 320 ? 320 : width
+      height = height < 400 ? 400 : height
+
+      camera.aspect = width / height
+      camera.updateProjectionMatrix()
+      renderer.setSize(width, height)
+    }
+
     const evolveSmoke = () => {
       let sp = smokeParticles.length
       while (sp--) {
         smokeParticles[sp].rotation.z += (delta * 0.2)
       }
     }
+
+    window.addEventListener('resize', handleResize)
 
     const animate = () => {
       delta = clock.getDelta()
