@@ -6,7 +6,7 @@ export const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 76px;
+  height: 100px;
   margin: 0 20px;
   color: ${({ theme }) => theme.white};
 
@@ -27,7 +27,7 @@ export const StyledHeader = styled.header`
       padding-top: 71px;
       background: rgba(11,12,13,0.92);
       list-style: none;
-      & li {
+      & li a {
         margin-bottom: 58px;
         font-family: Open Sans;
         font-style: normal;
@@ -35,6 +35,7 @@ export const StyledHeader = styled.header`
         font-size: 14px;
         line-height: 15px;
         letter-spacing: 4px;
+        color: ${({ theme }) => theme.white};
         cursor: pointer;
       }
     }

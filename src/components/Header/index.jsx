@@ -2,6 +2,7 @@
 /* eslint-disable operator-linebreak */
 
 import React, { useState } from 'react'
+import { Link } from '@reach/router'
 import { MdMenu, MdClose } from 'react-icons/md'
 
 import { Logo, StyledHeader } from './styles'
@@ -19,10 +20,10 @@ export const Header = () => {
           ?
           <>
             <ul>
-              <li>HOME</li>
-              <li>WORK</li>
-              <li>ABOUT</li>
-              <li>CONTACT</li>
+              <li><Link to='/'>HOME</Link></li>
+              <li><Link to='/work'>WORK</Link></li>
+              <li><Link to='/about'>ABOUT</Link></li>
+              <li><Link to='/contact'>CONTACT</Link></li>
             </ul>
             <MdClose size={35} onClick={activateNav} />
           </>
