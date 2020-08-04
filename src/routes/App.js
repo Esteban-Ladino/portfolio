@@ -4,6 +4,7 @@ import { Router } from '@reach/router'
 import { Layout } from '../components/Layout'
 import { NotFound } from '../pages/NotFound'
 import { Home } from '../pages/Home'
+import { Work } from '../pages/Work'
 
 function App () {
   return (
@@ -11,6 +12,7 @@ function App () {
       <Router>
         <NotFound default />
         <Home path='/' />
+        <Work path='/work' />
       </Router>
     </Layout>
   )

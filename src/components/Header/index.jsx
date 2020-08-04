@@ -14,16 +14,16 @@ export const Header = () => {
 
   return (
     <StyledHeader>
-      <Logo>EL</Logo>
+      <Link to='/'><Logo>EL</Logo></Link>
       <nav>
         {navActive
           ?
           <>
             <ul>
-              <li><Link to='/'>HOME</Link></li>
-              <li><Link to='/work'>WORK</Link></li>
-              <li><Link to='/about'>ABOUT</Link></li>
-              <li><Link to='/contact'>CONTACT</Link></li>
+              <li><Link to='/' onClick={activateNav}>HOME</Link></li>
+              <li><Link to='/work' onClick={activateNav}>WORK</Link></li>
+              <li><Link to='/about' onClick={activateNav}>ABOUT</Link></li>
+              <li><Link to='/contact' onClick={activateNav}>CONTACT</Link></li>
             </ul>
             <MdClose size={35} onClick={activateNav} />
           </>

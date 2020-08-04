@@ -3,5 +3,6 @@ export const variables = {
   black: '#1B1B20',
   lightCyan: '#00FFFF',
   gray: '#40474F',
-  lightGray: '#647385'
+  lightGray: '#647385',
+  regularGray: '#ABB0B1'
 }

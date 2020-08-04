@@ -12,7 +12,11 @@ export const StyledFooter = styled.footer`
     width: 200px;
     list-style: none;
     & li a {
-      color: ${({ theme }) => theme.white}
+      color: ${({ theme }) => theme.white};
+
+      & svg {
+        filter: drop-shadow(0px 0px 3px #131313);
+      }
     }
   }
 
