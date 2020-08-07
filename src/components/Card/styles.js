@@ -7,7 +7,7 @@ export const Article = styled.article`
   border-radius: 5px;
   box-sizing: border-box;
   & figure {
-    height: 100%;
+    height: 453px;
     width: fit-content;
     margin: 0 auto;
     filter: drop-shadow(9px 13px 13px rgba(36, 42, 58, 0.25));

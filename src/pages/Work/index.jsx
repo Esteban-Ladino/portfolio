@@ -98,13 +98,13 @@ export const Work = () => {
     <Main ref={mount}>
       <h2>MY WORK</h2>
       <ul>
-        <li><Card title='kumpel' image={kumpelImg} link='https://www.youtube.com/watch?v=-iHEr1Ds1SE&list=PLk4Q1VrB4bbc24Na7vyakwVzEUK4rzLYp&index=2' /></li>
-        <li><Card title='pokeguia' image={pokeguiaImg} link='https://www.youtube.com/watch?v=8sy8N-TmzPM&list=PLk4Q1VrB4bbc24Na7vyakwVzEUK4rzLYp&index=2&t=3s' /></li>
-        <li><Card title='countries' image={countriesImg} link='https://loving-dubinsky-9b7d47.netlify.app/' /></li>
-        <li><Card title='easybank' image={easybankImg} link='https://esteban-ladino.github.io/easybank-landing-page/' /></li>
-        <li><Card title='Manage page' image={manageImg} link='https://relaxed-borg-a653d7.netlify.app/' /></li>
-        <li><Card title='social media' image={socialMediaImg} link='https://esteban-ladino.github.io/social-media-dashboard/' /></li>
-        <li><Card title='exchange page' image={exchange} link='https://esteban-exchange-project.netlify.app/' /></li>
+        <li><Card title='kumpel' description='Kumpel is a web application to search and rent rooms. This project consists of generating a platform where the user can open a request or offer hosting.' image={kumpelImg} link='https://www.youtube.com/watch?v=-iHEr1Ds1SE&list=PLk4Q1VrB4bbc24Na7vyakwVzEUK4rzLYp&index=2' /></li>
+        <li><Card title='pokeguia' description='Pokedex is a site for consulting information on interactive Pokémon with hundreds of Pokémon to filter and explore. This is a project of the Platzi Master program' image={pokeguiaImg} link='https://www.youtube.com/watch?v=8sy8N-TmzPM&list=PLk4Q1VrB4bbc24Na7vyakwVzEUK4rzLYp&index=2&t=3s' /></li>
+        <li><Card title='countries' description='This is the REST Countries API with color theme switcher coding challenge by Frontend Mentor Created using ReactJS. To see more visit my GitHub repository' image={countriesImg} link='https://loving-dubinsky-9b7d47.netlify.app/' /></li>
+        <li><Card title='easybank' description='This the the Easybank landing page coding challenge by Fontend Mentor. Created using ReactJS. To see more visit my GitHub repository' image={easybankImg} link='https://esteban-ladino.github.io/easybank-landing-page/' /></li>
+        <li><Card title='Manage page' description='This is the Manage landing page coding challenge by Frontend Mentor. Created using ReactJS. To see more visit my GitHub repository' image={manageImg} link='https://relaxed-borg-a653d7.netlify.app/' /></li>
+        <li><Card title='social media' description='This is the Social Media Dashboard coding challenge by Frontend Mentor. Created using ReactJS. To see more visit my GitHub repository' image={socialMediaImg} link='https://esteban-ladino.github.io/social-media-dashboard/' /></li>
+        <li><Card title='exchange page' description='This is a platform that will serve you to visualize all cryptocurrencies in real time, it was created at the Vue.js basic course from Platzi. Created using VueJS' image={exchange} link='https://esteban-exchange-project.netlify.app/' /></li>
       </ul>
     </Main>
   )
