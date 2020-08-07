@@ -16,7 +16,6 @@ export const StyledHeader = styled.header`
     left: -20px;
     width: 100vw;
     min-width: 320px;
-    height: 390px;
     & ul {
       position: absolute;
       top: 0;

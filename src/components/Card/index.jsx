@@ -4,7 +4,8 @@ import pokeguiaImg from '../../assets/images/pokeguia.png'
 
 export const Card = (props) => {
   const {
-    title = 'Pokeguia Project',
+    title = 'Kumpel',
+    description = 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet',
     image = pokeguiaImg,
     link = 'about:blank'
   } = props
@@ -12,11 +13,12 @@ export const Card = (props) => {
   return (
     <Article>
       <a href={link} target='_blank' rel='noopener noreferrer'>
-        <h2>{title}</h2>
         <figure>
           <img src={image} alt={`${title} preview`} />
         </figure>
       </a>
+      <h2>{title}</h2>
+      <p>{description}</p>
     </Article>
   )
 }
