@@ -51,5 +51,6 @@
       "src/serviceWorker.js",
       "src/setupTests.js"
     ]
-  }
+  },
+  "license": "GPL-3.0"
 }
